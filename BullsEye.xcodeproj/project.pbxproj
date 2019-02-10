@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F377D7482210A2EB00FB53BE /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377D7472210A2EB00FB53BE /* AboutAuthorViewController.swift */; };
 		F38A80362210198400B143CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A80352210198400B143CF /* AppDelegate.swift */; };
 		F38A80382210198400B143CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A80372210198400B143CF /* ViewController.swift */; };
 		F38A803B2210198400B143CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38A80392210198400B143CF /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F377D7472210A2EB00FB53BE /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 		F38A80322210198400B143CF /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38A80352210198400B143CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F38A80372210198400B143CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F38A803E2210198500B143CF /* LaunchScreen.storyboard */,
 				F38A80412210198500B143CF /* Info.plist */,
 				F38A80472210355300B143CF /* AboutViewController.swift */,
+				F377D7472210A2EB00FB53BE /* AboutAuthorViewController.swift */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				F38A80482210355300B143CF /* AboutViewController.swift in Sources */,
 				F38A80382210198400B143CF /* ViewController.swift in Sources */,
 				F38A80362210198400B143CF /* AppDelegate.swift in Sources */,
+				F377D7482210A2EB00FB53BE /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4246PMBZVS;
 				INFOPLIST_FILE = BullsEye/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.landtanin.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4246PMBZVS;
 				INFOPLIST_FILE = BullsEye/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.landtanin.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

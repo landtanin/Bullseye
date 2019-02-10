@@ -1,5 +1,5 @@
 //
-//  AboutViewController.swift
+//  AboutAuthorViewController.swift
 //  BullsEye
 //
 //  Created by Tanin on 10/02/2019.
@@ -8,14 +8,15 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class AboutAuthorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func close(_ sender: UIButton) {
-        
+    @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }
 
