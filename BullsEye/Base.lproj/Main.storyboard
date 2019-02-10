@@ -199,50 +199,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lTn-Mw-bJa">
-                                <rect key="frame" x="5" y="5" width="558" height="265"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-Sh-L4N">
-                                <rect key="frame" x="264.5" y="275" width="39" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="T2B-ak-CjA">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-Sh-L4N">
+                                <rect key="frame" x="234" y="268" width="100" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6Ye-Nw-T4c"/>
-                                    <constraint firstAttribute="width" secondItem="c0Y-Sh-L4N" secondAttribute="height" multiplier="13:10" id="7CX-p6-brP"/>
+                                    <constraint firstAttribute="height" constant="37" id="CDU-mP-bXs"/>
+                                    <constraint firstAttribute="width" secondItem="c0Y-Sh-L4N" secondAttribute="height" multiplier="100:37" id="haA-YS-STW"/>
                                 </constraints>
-                                <state key="normal" title="Close"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.2997460938" green="0.15614286890000001" blue="0.02523703071" alpha="0.98274958050000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="0.50815331375838924" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                 <connections>
                                     <action selector="close:" destination="Nz5-SL-3c2" eventType="touchUpInside" id="W9P-RZ-W7Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuU-uB-AIz">
-                                <rect key="frame" x="456" y="275" width="92" height="30"/>
+                                <rect key="frame" x="436" y="271.5" width="118" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="WuU-uB-AIz" secondAttribute="height" multiplier="46:15" id="10C-Kd-64a"/>
+                                    <constraint firstAttribute="width" secondItem="WuU-uB-AIz" secondAttribute="height" multiplier="46:15" constant="26" id="10C-Kd-64a"/>
                                     <constraint firstAttribute="height" constant="30" id="sc5-dF-eYN"/>
                                 </constraints>
-                                <state key="normal" title="About Author"/>
+                                <state key="normal" title="About the Author"/>
                                 <connections>
                                     <segue destination="uJy-fR-Lww" kind="presentation" modalTransitionStyle="coverVertical" id="MPC-jE-oyC"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEw-7H-wDP">
+                                <rect key="frame" x="14" y="12" width="540" height="248"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SDr-YG-VvT" firstAttribute="trailing" secondItem="lTn-Mw-bJa" secondAttribute="trailing" constant="5" id="4em-n2-3rR"/>
-                            <constraint firstItem="c0Y-Sh-L4N" firstAttribute="top" secondItem="lTn-Mw-bJa" secondAttribute="bottom" constant="5" id="Bd0-Tv-8Hx"/>
+                            <constraint firstItem="SDr-YG-VvT" firstAttribute="trailing" secondItem="T2B-ak-CjA" secondAttribute="trailing" id="1Lq-q8-mIZ"/>
+                            <constraint firstItem="SDr-YG-VvT" firstAttribute="trailing" secondItem="HEw-7H-wDP" secondAttribute="trailing" constant="14" id="A5t-sc-j1z"/>
+                            <constraint firstItem="HEw-7H-wDP" firstAttribute="leading" secondItem="SDr-YG-VvT" secondAttribute="leading" constant="14" id="HKG-6q-UXa"/>
+                            <constraint firstItem="HEw-7H-wDP" firstAttribute="top" secondItem="SDr-YG-VvT" secondAttribute="top" constant="12" id="RDs-Ur-vo6"/>
                             <constraint firstItem="c0Y-Sh-L4N" firstAttribute="centerX" secondItem="Ptk-dd-oqB" secondAttribute="centerX" id="Sig-L7-9pe"/>
-                            <constraint firstItem="SDr-YG-VvT" firstAttribute="trailing" secondItem="WuU-uB-AIz" secondAttribute="trailing" constant="20" id="YFz-fV-YsF"/>
-                            <constraint firstItem="lTn-Mw-bJa" firstAttribute="centerX" secondItem="Ptk-dd-oqB" secondAttribute="centerX" id="ae2-B1-gKR"/>
+                            <constraint firstItem="SDr-YG-VvT" firstAttribute="trailing" secondItem="WuU-uB-AIz" secondAttribute="trailing" constant="14" id="YFz-fV-YsF"/>
                             <constraint firstItem="c0Y-Sh-L4N" firstAttribute="bottom" secondItem="Ptk-dd-oqB" secondAttribute="bottomMargin" constant="-15" id="b9P-SH-ZK8"/>
-                            <constraint firstItem="lTn-Mw-bJa" firstAttribute="leading" secondItem="SDr-YG-VvT" secondAttribute="leading" constant="5" id="cMj-9w-44s"/>
+                            <constraint firstItem="c0Y-Sh-L4N" firstAttribute="top" secondItem="HEw-7H-wDP" secondAttribute="bottom" constant="8" id="dcZ-vl-E5T"/>
+                            <constraint firstItem="SDr-YG-VvT" firstAttribute="bottom" secondItem="T2B-ak-CjA" secondAttribute="bottom" id="pS6-n1-C7M"/>
+                            <constraint firstItem="T2B-ak-CjA" firstAttribute="top" secondItem="SDr-YG-VvT" secondAttribute="top" id="tum-c7-ygN"/>
                             <constraint firstItem="WuU-uB-AIz" firstAttribute="centerY" secondItem="c0Y-Sh-L4N" secondAttribute="centerY" id="vrf-Us-qqG"/>
-                            <constraint firstItem="lTn-Mw-bJa" firstAttribute="top" secondItem="SDr-YG-VvT" secondAttribute="top" constant="5" id="zuK-6T-Qve"/>
+                            <constraint firstItem="T2B-ak-CjA" firstAttribute="leading" secondItem="SDr-YG-VvT" secondAttribute="leading" id="xuX-5e-zDn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SDr-YG-VvT"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="HEw-7H-wDP" id="fWN-3D-LHu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKy-wG-rr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

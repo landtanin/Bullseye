@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html"){
+            
+            let url = URL(fileURLWithPath: htmlPath)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            
+        }
+        
+        
     }
     
     @IBAction func close(_ sender: UIButton) {
